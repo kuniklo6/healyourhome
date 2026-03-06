@@ -2,15 +2,10 @@ export default function Home() {
   return (
     <>
       
-<header className="bg-white/80 backdrop-blur-md py-6 sticky top-0 z-50 border-b border-soft-peach">
+<header className="bg-white/80 backdrop-blur-md py-11 sticky top-0 z-50 border-b border-soft-peach">
 <div className="container mx-auto px-6 flex items-center justify-between">
 <div className="flex items-center">
-<svg className="w-12 h-12 text-terracotta" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-<path d="M50 10C55.3043 10 60.3914 12.1071 64.1421 15.8579C67.8929 19.6086 70 24.6957 70 30C70 41.0457 61.0457 50 50 50C38.9543 50 30 41.0457 30 30C30 18.9543 38.9543 10 50 10Z" stroke="currentColor" strokeWidth="2.5"></path>
-<path d="M75 53.3C80.3043 53.3 85.3914 55.4071 89.1421 59.1579C92.8929 62.9086 95 67.9957 95 73.3C95 84.3457 86.0457 93.3 75 93.3C63.9543 93.3 55 84.3457 55 73.3C55 62.2543 63.9543 53.3 75 53.3Z" stroke="currentColor" strokeWidth="2.5"></path>
-<path d="M25 53.3C30.3043 53.3 35.3914 55.4071 39.1421 59.1579C42.8929 62.9086 45 67.9957 45 73.3C45 84.3457 36.0457 93.3 25 93.3C13.9543 93.3 5 84.3457 5 73.3C5 62.2543 13.9543 53.3 25 53.3Z" stroke="currentColor" strokeWidth="2.5"></path>
-</svg>
-<span className="ml-3 font-display font-bold text-2xl text-earthy-brown tracking-tight" >Heal Your Home</span>
+<img src="/logo.svg" alt="Heal Your Home" className="h-32 w-auto" />
 </div>
 <nav className="hidden lg:flex space-x-8 text-sm font-semibold text-warm-text/80 uppercase tracking-widest">
 <a className="hover:text-terracotta transition-colors" href="#" >Home</a>
