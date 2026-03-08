@@ -5,7 +5,7 @@ export default function Home() {
       <header className="bg-white/80 backdrop-blur-md py-11 sticky top-0 z-50 border-b border-soft-peach">
         <div className="container mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center">
-            <img src="/logo.svg" alt="Heal Your Home" className="h-32 w-auto transform scale-150 origin-left" />
+            <img src="/logo.webp" alt="Heal Your Home" className="h-32 w-auto transform scale-150 origin-left" />
             <div className="flex flex-col justify-center ml-24" style={{ fontFamily: "'Eagle Lake', serif" }}>
               <span className="text-4xl leading-none" style={{ lineHeight: '1.1', color: '#cd9f7b' }}>Heal</span>
               <span className="text-4xl leading-none" style={{ lineHeight: '1.1', color: '#cd9f7b' }}>Your</span>
@@ -34,7 +34,7 @@ export default function Home() {
             <span className="inline-block px-4 py-1 bg-terracotta/10 text-terracotta rounded-full text-sm font-bold uppercase tracking-widest mb-6" >Welcome Home</span>
             <h1 className="text-5xl md:text-7xl font-bold text-earthy-brown mb-6 leading-tight" >House Healing</h1>
             <p className="text-2xl md:text-3xl font-serif italic text-warm-text/70 mb-10" >A Journey to Wholeness</p>
-            <div className="space-y-4 text-lg text-warm-text/80 mb-10 max-w-md mx-auto md:mx-0 leading-relaxed">
+            <div className="space-y-4 text-lg text-warm-text/80 mb-10 max-w-2xl mx-auto md:mx-0 leading-relaxed">
               <p className="" >Our geopathic stress removal services are designed to harmonize your subtle environment, providing relief from high sensitivity, anxiety, and poor sleep while shielding you from the disruptive effects of EMFs.</p>
 
             </div>
@@ -103,7 +103,7 @@ export default function Home() {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-8" >Keep in Touch</h2>
           <p className="text-lg opacity-80 mb-14 leading-relaxed font-light" >
-            Tim's newsletter contains details about his workshops in the UK and online and includes practical, philosophical blogs on the nature of reality, balanced with information about emerging fields of consciousness and healing.
+
           </p>
           <form className="space-y-4 max-w-lg mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -127,15 +127,15 @@ export default function Home() {
               <div className="space-y-8">
                 <div className="flex items-start">
                   <span className="material-symbols-outlined text-terracotta mr-4" >location_on</span>
-                  <p className="text-warm-text/80 text-sm leading-relaxed" >Storthwaite Hall,<br />Arkengarthdale, Richmond,<br />North Yorkshire DL11 6EX</p>
+                  <p className="text-warm-text/80 text-sm leading-relaxed" >Tubbercurry</p>
                 </div>
                 <div className="flex items-center">
                   <span className="material-symbols-outlined text-terracotta mr-4" >smartphone</span>
-                  <p className="text-warm-text/80" >07973 640 844</p>
+                  <p className="text-warm-text/80" >071 999 9999</p>
                 </div>
                 <div className="flex items-center">
                   <span className="material-symbols-outlined text-terracotta mr-4" >alternate_email</span>
-                  <p className="text-warm-text/80" >tim.walter@knightsrose.com</p>
+                  <p className="text-warm-text/80" >bertie.walsh@example.com</p>
                 </div>
               </div>
               <div className="flex space-x-4 mt-12">
@@ -166,7 +166,7 @@ export default function Home() {
                 </div>
                 <div className="flex justify-between items-center flex-wrap gap-4">
                   <div className="text-sm text-warm-text/60 italic font-serif" >
-                    All <a className="text-terracotta font-bold hover:underline" href="#" >donations</a> valued &amp; appreciated
+
                   </div>
                   <button className="bg-terracotta text-white font-bold py-4 px-10 rounded-full hover:bg-opacity-90 hover:scale-105 transition-all uppercase tracking-widest text-sm" type="submit" >Send Message</button>
                 </div>
