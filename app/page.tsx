@@ -4,9 +4,9 @@ export default function Home() {
 
       <header className="bg-white/80 backdrop-blur-md py-11 sticky top-0 z-50 border-b border-soft-peach">
         <div className="container mx-auto px-6 flex items-center justify-between flex-wrap">
-          <div className="flex items-center">
-            <img src="/logo.webp" alt="Heal Your Home" className="h-32 w-auto transform scale-150 origin-left" />
-            <div className="flex flex-col justify-center ml-24" style={{ fontFamily: "'Eagle Lake', serif" }}>
+          <div className="flex flex-col md:flex-row items-center w-full md:w-auto justify-center md:justify-start">
+            <img src="/logo.webp" alt="Heal Your Home" className="h-32 w-auto transform scale-150 origin-center md:origin-left" />
+            <div className="flex flex-col justify-center items-center md:items-start mt-8 md:mt-0 md:ml-24" style={{ fontFamily: "'Eagle Lake', serif" }}>
               <span className="text-4xl leading-none" style={{ lineHeight: '1.1', color: '#cd9f7b' }}>Heal</span>
               <span className="text-4xl leading-none" style={{ lineHeight: '1.1', color: '#cd9f7b' }}>Your</span>
               <span className="text-4xl leading-none" style={{ lineHeight: '1.1', color: '#cd9f7b' }}>Home</span>
