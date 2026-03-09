@@ -3,7 +3,7 @@ export default function Home() {
     <>
 
       <header className="bg-white/80 backdrop-blur-md py-11 sticky top-0 z-50 border-b border-soft-peach">
-        <div className="container mx-auto px-6 flex items-center justify-between">
+        <div className="container mx-auto px-6 flex items-center justify-between flex-wrap">
           <div className="flex items-center">
             <img src="/logo.webp" alt="Heal Your Home" className="h-32 w-auto transform scale-150 origin-left" />
             <div className="flex flex-col justify-center ml-24" style={{ fontFamily: "'Eagle Lake', serif" }}>
@@ -23,7 +23,7 @@ export default function Home() {
           <div className="hidden md:flex items-center">
             <a className="bg-gentle-sage hover:bg-opacity-80 text-earthy-brown px-6 py-2 rounded-full font-bold text-sm transition-all" href="#" >Contact</a>
           </div>
-          <button className="lg:hidden text-earthy-brown" >
+          <button className="lg:hidden text-earthy-brown ml-auto mt-4 md:mt-0" >
             <span className="material-symbols-outlined" >menu</span>
           </button>
         </div>
