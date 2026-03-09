@@ -135,7 +135,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <span className="material-symbols-outlined text-terracotta mr-4" >alternate_email</span>
-                  <p className="text-warm-text/80" >bertie.walsh@example.com</p>
+                  <p className="text-warm-text/80" >bertie.walsh@healyourhome.ie</p>
                 </div>
               </div>
               <div className="flex space-x-4 mt-12">
