@@ -17,6 +17,7 @@ export default function Home() {
             <a className="hover:text-terracotta transition-colors" href="#" >About</a>
             <a className="hover:text-terracotta transition-colors" href="#" >Services</a>
             <a className="hover:text-terracotta transition-colors" href="#" >Workshops</a>
+            <a className="hover:text-terracotta transition-colors" href="#" >Testimonials</a>
             <a className="hover:text-terracotta transition-colors" href="#" >Blog</a>
 
           </nav>
