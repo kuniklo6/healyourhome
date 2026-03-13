@@ -13,11 +13,11 @@ export default function Header() {
           </div>
         </div>
         <nav className="hidden lg:flex space-x-8 text-sm font-semibold text-warm-text/80 uppercase tracking-widest">
-          <a className="hover:text-terracotta transition-colors" href="#" >Home</a>
+          <a className="hover:text-terracotta transition-colors" href="/" >Home</a>
           <a className="hover:text-terracotta transition-colors" href="#" >About</a>
           <a className="hover:text-terracotta transition-colors" href="#" >Services</a>
           <a className="hover:text-terracotta transition-colors" href="#" >Workshops</a>
-          <a className="hover:text-terracotta transition-colors" href="#" >Testimonials</a>
+          <a className="hover:text-terracotta transition-colors" href="/testimonials" >Testimonials</a>
           <a className="hover:text-terracotta transition-colors" href="#" >Blog</a>
 
         </nav>

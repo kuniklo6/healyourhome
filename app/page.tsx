@@ -1,8 +1,6 @@
 export default function Home() {
   return (
     <>
-
-
       <section className="hero-gradient pt-20 pb-28">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2 text-center md:text-left">
