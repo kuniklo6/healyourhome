@@ -12,7 +12,7 @@ export async function POST(request: Request) {
       to: ['bertiewalsh6@gmail.com'],
       subject: `New Message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-      reply_to: email,
+      replyTo: email,
     });
 
     return NextResponse.json(data);
