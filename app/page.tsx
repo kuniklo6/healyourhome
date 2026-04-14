@@ -69,25 +69,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-earthy-brown py-28 text-center text-warm-cream">
-        <div className="container mx-auto px-6 max-w-3xl">
-          <div className="inline-block p-4 rounded-full bg-terracotta/20 mb-8">
-            <span className="material-symbols-outlined text-4xl text-soft-peach" >mail</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8" >Keep in Touch</h2>
-          <p className="text-lg opacity-80 mb-14 leading-relaxed font-light" >
-
-          </p>
-          <form className="space-y-4 max-w-lg mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input className="w-full px-6 py-4 rounded-3xl bg-white/10 border-white/20 text-white placeholder-white/50 focus:ring-2 focus:ring-terracotta focus:bg-white/20 transition-all outline-none" placeholder="First Name" type="text" />
-              <input className="w-full px-6 py-4 rounded-3xl bg-white/10 border-white/20 text-white placeholder-white/50 focus:ring-2 focus:ring-terracotta focus:bg-white/20 transition-all outline-none" placeholder="Last Name" type="text" />
-            </div>
-            <input className="w-full px-6 py-4 rounded-3xl bg-white/10 border-white/20 text-white placeholder-white/50 focus:ring-2 focus:ring-terracotta focus:bg-white/20 transition-all outline-none" placeholder="Your Email Address" type="email" />
-            <button className="w-full bg-terracotta text-white font-bold py-4 px-10 rounded-full hover:bg-opacity-90 transition-all uppercase tracking-widest mt-4" type="submit" >Subscribe to Newsletter</button>
-          </form>
-        </div>
-      </section>
       <section className="relative py-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img alt="Natural Wood Grain Texture" className="w-full h-full object-cover opacity-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvJnzR87g-0ypKSxGVyG3fKa9uQQZnffCzEY8aj9_HfBWWaeHTQyHaUIp16BB2ep961O4B0FajEVOeBnhlTtT85vVRW4liQfZQ0AhTUULhPGxGNdWl51DS8XmH-yaGFTQwvDPao45igVYuT1aUbheRpgmd08CNMJmMiPem9ePT9rccA7qDQ6X8LwV5lxybPd_GKY4VJNSlxoQzVeOc1kGMCYjlXci7B34KZS8nCA6-5v4CggCU23rv__my5OY-76qwxzvs79OfG0g1" />
