@@ -1,4 +1,39 @@
+"use client";
+
+import { useState } from 'react';
+
 export default function Home() {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
   return (
     <>
       <section className="hero-gradient pt-20 pb-28">
@@ -103,27 +138,31 @@ export default function Home() {
             </div>
             <div className="bg-white rounded-3xl soft-shadow p-12 lg:w-2/3 border border-soft-peach">
               <h3 className="text-2xl font-bold mb-10 text-earthy-brown" >Leave A Message</h3>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-widest text-warm-text/50 mb-2 ml-1" >Name</label>
-                    <input className="w-full px-6 py-4 border border-warm-grey rounded-2xl bg-warm-cream/30 focus:ring-2 focus:ring-terracotta focus:border-transparent outline-none transition-all" placeholder="Your name" type="text" />
+                    <input className="w-full px-6 py-4 border border-warm-grey rounded-2xl bg-warm-cream/30 focus:ring-2 focus:ring-terracotta focus:border-transparent outline-none transition-all" placeholder="Your name" type="text" name="name" value={formData.name} onChange={handleChange} required />
                   </div>
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-widest text-warm-text/50 mb-2 ml-1" >Email</label>
-                    <input className="w-full px-6 py-4 border border-warm-grey rounded-2xl bg-warm-cream/30 focus:ring-2 focus:ring-terracotta focus:border-transparent outline-none transition-all" placeholder="Your email" type="email" />
+                    <input className="w-full px-6 py-4 border border-warm-grey rounded-2xl bg-warm-cream/30 focus:ring-2 focus:ring-terracotta focus:border-transparent outline-none transition-all" placeholder="Your email" type="email" name="email" value={formData.email} onChange={handleChange} required />
                   </div>
                 </div>
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-widest text-warm-text/50 mb-2 ml-1" >Message</label>
-                  <textarea className="w-full px-6 py-4 border border-warm-grey rounded-2xl bg-warm-cream/30 focus:ring-2 focus:ring-terracotta focus:border-transparent outline-none resize-none transition-all" placeholder="How can we help you?" rows={5}></textarea>
+                  <textarea className="w-full px-6 py-4 border border-warm-grey rounded-2xl bg-warm-cream/30 focus:ring-2 focus:ring-terracotta focus:border-transparent outline-none resize-none transition-all" placeholder="How can we help you?" rows={5} name="message" value={formData.message} onChange={handleChange} required></textarea>
                 </div>
                 <div className="flex justify-between items-center flex-wrap gap-4">
                   <div className="text-sm text-warm-text/60 italic font-serif" >
 
                   </div>
-                  <button className="bg-terracotta text-white font-bold py-4 px-10 rounded-full hover:bg-opacity-90 hover:scale-105 transition-all uppercase tracking-widest text-sm" type="submit" >Send Message</button>
+                  <button className="bg-terracotta text-white font-bold py-4 px-10 rounded-full hover:bg-opacity-90 hover:scale-105 transition-all uppercase tracking-widest text-sm disabled:opacity-50" type="submit" disabled={status === 'loading'} >
+                    {status === 'loading' ? 'Sending...' : 'Send Message'}
+                  </button>
                 </div>
+                {status === 'success' && <p className="text-green-600 w-full mt-4 font-semibold text-center">Message sent successfully!</p>}
+                {status === 'error' && <p className="text-red-500 w-full mt-4 font-semibold text-center">Failed to send message. Please try again.</p>}
               </form>
             </div>
           </div>
